@@ -10,7 +10,7 @@ interface ItemMenuProps{
 
 function ItemMenu( props: ItemMenuProps ){
     return(
-        <Link href={props.url} className="flex gap-3 py-3 px-3 hover:bg-zinc-900 rounded-md text-2xl">
+        <Link href={props.url} className="flex gap-3 py-1 px-1 hover:bg-gray-800 rounded-md text-2xl">
             <props.icone className="text-zinc-200" size={25} />
             <span className="text-zinc-200">{props.label}</span>
         </Link>
@@ -19,11 +19,11 @@ function ItemMenu( props: ItemMenuProps ){
 
 export default function Menu(){
     return(
-        <div className="w-62 bg-blue-700 h-screen">
+        <div className="w-[300px] bg-zinc-800 h-screen border-r border-white">
             <nav className="flex flex-col gap-2 py-2 px-3">
+                <ItemMenu icone={FaVideo} label="Aulas" url="/" />
                 <ItemMenu icone={FaPersonBooth} label="Cadastro Aluno" url="/" />
                 <ItemMenu icone={FaAndroid} label="Cadastro Pokemon" url="/" />
-                <ItemMenu icone={FaVideo} label="Aulas" url="/" />
             </nav>
         </div>
     )

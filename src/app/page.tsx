@@ -5,9 +5,11 @@ import { FaHouse } from "react-icons/fa6";
 export default function Home() {
   return (
     <LayoutApp>
-      <Title icon={FaHouse} title="Login" subTitle="Tela de cadastro caso tenha só entrar" />
+      <Title icon={FaHouse} title="Login" />
 
-      <p>Teste</p>
+      <div className="container px-5">
+        <p>Teste</p>
+      </div>
     </LayoutApp>
   );
 }

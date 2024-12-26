@@ -1,3 +1,7 @@
+## Como ficou no Desktop
+
+<img src="./src/app/assets/Desktop.png">
+
 #### Projeto
 
 * Instalar Icones

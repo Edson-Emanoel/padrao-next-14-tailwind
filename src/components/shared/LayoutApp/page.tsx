@@ -9,7 +9,7 @@ export default function LayoutApp( props: LayoutProps ){
     return(
         <div className="flex">
             <Menu />
-            <section className="flex-1 p-5 bg-zinc50 text-black">
+            <section className="flex-1 bg-zinc50 text-white bg-gray-800">
                 { props.children }
             </section>
         </div>
